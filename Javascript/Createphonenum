@@ -1,0 +1,17 @@
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+// This was a challenge i found on Codewars and decided to give it a try
+
+
+
+function createPhoneNumber(numbers){
+return `(${numbers.slice(0, 3).join('')}) ${numbers.slice(3, 6).join('')}-${numbers.slice(6).join('')}`;
+  
+}
+
+/*The function createPhoneNumber takes an array of 10 integers as an input argument. The first step is to extract the first 3, next 3, and the last 4 digits from the input array using the slice method.
+
+The slice method creates a shallow copy of a portion of an array into a new array object selected from start to end (end not included). In this case, numbers.slice(0, 3) returns the first 3 elements of the numbers array, numbers.slice(3, 6) returns the next 3 elements, and numbers.slice(6) returns the remaining elements.
+
+The join method is used to join all the elements of the extracted arrays into a single string, with no separator for the first 3 digits and a hyphen for the last 4 digits.
+
+Finally, the concatenated string is returned using template literals (the backtick characters). The template literal allows the insertion of expressions (such as the numbers.slice calls) into the string literal. The resulting string has the desired format of a phone number. */
