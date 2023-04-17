@@ -20,3 +20,5 @@ def digital_root(n):
 
 print(digital_root(16))     # Output: 7
 print(digital_root(942))    # Output: 6
+print(digital_root(132189)) # Output: 6
+print(digital_root(493193)) # Output: 2
